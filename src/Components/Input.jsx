@@ -33,7 +33,7 @@ export default function Input() {
                 "Content-Type": "multipart/form-data"
             }
         })
-            .then(alert("data uploaded"),window.location.reload())
+            .then(alert("data uploaded"), window.location.reload())
             .catch((err) => console.log(err))
     }
 
@@ -45,7 +45,7 @@ export default function Input() {
                 <input type="text" placeholder='Movie Name' value={name} onChange={(e) => setname(e.target.value)} />
                 <input type="text" placeholder='Movie Grade' value={grade} onChange={(e) => setgrade(e.target.value)} />
                 <input type="text" placeholder='Movie Languages' value={language} onChange={(e) => setlanguage(e.target.value)} />
-<br />
+                <br />
                 <input type="text" placeholder='Tamil' value={tamil} onChange={(e) => settamil(e.target.value)} />
                 <input type="text" placeholder='Hindi' value={hindi} onChange={(e) => sethindi(e.target.value)} />
                 <input type="text" placeholder='English' value={eng} onChange={(e) => seteng(e.target.value)} />
