@@ -17,7 +17,7 @@ export default function Home() {
     const [view, setview] = useState([]);
 
     useEffect(() => {
-        axios.get('https://mern-ticket-booking.onrender.com/movies/getfiles')
+        axios.get('http://localhost:2300/movies/getfiles')
             .then((res) => setview(res.data))
             .catch((err) => console.log(err))
     }, [])

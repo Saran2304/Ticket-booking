@@ -28,7 +28,7 @@ export default function Input() {
     formdata.append('Malayalam', malayalam)
 
     function upload() {
-        axios.post('https://mern-ticket-booking.onrender.com/movies/uploadimage', formdata, {
+        axios.post('http://localhost:2300/movies/uploadimage', formdata, {
             headers: {
                 "Content-Type": "multipart/form-data"
             }
