@@ -28,7 +28,7 @@ export default function Input() {
     formdata.append('Malayalam', malayalam)
 
     function upload() {
-        axios.post('http://localhost:2300/movies/uploadimage', formdata, {
+        axios.post('http://localhost:4000/movies/uploadimage', formdata, {
             headers: {
                 "Content-Type": "multipart/form-data"
             }
