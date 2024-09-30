@@ -28,7 +28,7 @@ export default function Input() {
     formdata.append('Malayalam', malayalam)
 
     function upload() {
-        axios.post('http://localhost:4000/movies/uploadimage', formdata, {
+        axios.post('https://ticket-backend-zjwf.onrender.com/movies/uploadimage', formdata, {
             headers: {
                 "Content-Type": "multipart/form-data"
             }

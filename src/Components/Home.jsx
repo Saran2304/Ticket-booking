@@ -17,7 +17,7 @@ export default function Home() {
     const [view, setview] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:4000/movies/getfiles')
+        axios.get('https://ticket-backend-zjwf.onrender.com/movies/getfiles')
             .then((res) => setview(res.data))
             .catch((err) => console.log(err))
     }, [])
