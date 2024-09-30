@@ -498,7 +498,7 @@ export default function Home() {
                                                 view.map((item) => {
                                                     return (
                                                         <div className='movielist'>
-                                                            <img height="200" width="130" src={`http://localhost:2300/movies/upload/${item.MovieImage}`} alt='movie' />
+                                                            <img height="200" width="130" src={`https://ticket-backend-zjwf.onrender.com/movies/upload/${item.MovieImage}`} alt='movie' />
                                                             <br /><h3 className='name'>{item.MovieName}</h3>
                                                             <p>{item.MovieGrade}</p>
                                                             <p className='lan'>{item.MovieLanguages}</p>
